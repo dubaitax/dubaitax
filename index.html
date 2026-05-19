@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dubai AI Tax Calculator</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-white">
+
+  <div class="min-h-screen flex items-center justify-center">
+
+    <div class="glass p-10 rounded-3xl w-[400px]">
+
+      <h1 class="text-3xl font-bold mb-6">
+        Dubai AI Tax Calculator
+      </h1>
+
+      <input
+        type="number"
+        id="profit"
+        placeholder="Enter Profit"
+        class="w-full p-4 rounded-xl text-black mb-4"
+      >
+
+      <button
+        onclick="calculateTax()"
+        class="w-full bg-yellow-500 text-black p-4 rounded-xl font-bold"
+      >
+        Calculate Tax
+      </button>
+
+      <div id="result" class="mt-6 text-2xl"></div>
+
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
