@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Corporate Tax</title>
+
+  <link rel="stylesheet" href="corporate.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>UAE Corporate Tax</h1>
+
+    <input
+      type="number"
+      id="profit"
+      placeholder="Enter Business Profit"
+    >
+
+    <button onclick="calculateCorporateTax()">
+      Calculate Tax
+    </button>
+
+    <div class="result-box">
+
+      <h2 id="taxAmount"></h2>
+
+      <h2 id="netProfit"></h2>
+
+    </div>
+
+  </div>
+
+  <script src="corporate.js"></script>
+
+</body>
+</html>
