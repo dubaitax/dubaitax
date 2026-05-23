@@ -446,3 +446,105 @@ body{
         align-items:flex-start;
     }
 }
+/* =========================
+   LOGO
+========================= */
+
+.logo,
+.footer-brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.logo-icon{
+  position:relative;
+  width:70px;
+  height:70px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#00c6ff,#0052ff,#8f00ff);
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+  padding-bottom:12px;
+  overflow:hidden;
+}
+
+.bar{
+  width:8px;
+  border-radius:10px;
+  background:white;
+  margin:0 3px;
+}
+
+.bar1{
+  height:18px;
+}
+
+.bar2{
+  height:28px;
+}
+
+.bar3{
+  height:40px;
+}
+
+.arrow{
+  position:absolute;
+  width:55px;
+  height:55px;
+  border-top:10px solid #ffb347;
+  border-right:10px solid #ffb347;
+  transform:rotate(45deg);
+  top:5px;
+  right:-5px;
+  border-radius:4px;
+}
+
+.logo-text{
+  font-size:48px;
+  font-weight:800;
+  font-style:italic;
+  background:linear-gradient(to right,#ffffff,#7fe8ff,#00bfff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  letter-spacing:-2px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  margin-top:80px;
+  padding:40px 20px;
+  background:#050505;
+  text-align:center;
+  color:#aaa;
+}
+
+.footer-brand{
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.footer p{
+  font-size:14px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .logo-text{
+    font-size:34px;
+  }
+
+  .logo-icon{
+    width:55px;
+    height:55px;
+  }
+
+}
