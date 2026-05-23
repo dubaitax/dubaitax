@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VAT Calculator</title>
+
+  <link rel="stylesheet" href="vat.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>UAE VAT Calculator</h1>
+
+    <input
+      type="number"
+      id="amount"
+      placeholder="Enter Amount"
+    >
+
+    <button onclick="calculateVAT()">
+      Calculate VAT
+    </button>
+
+    <div class="result-box">
+
+      <h2 id="vatAmount"></h2>
+
+      <h2 id="totalAmount"></h2>
+
+    </div>
+
+  </div>
+
+  <script src="vat.js"></script>
+
+</body>
+</html>
