@@ -76,3 +76,50 @@ cards.forEach(function(card){
             "translateY(0px)";
     });
 });
+// ==========================
+// BUSINESS COUNTER
+// ==========================
+
+let businessCount = localStorage.getItem("businessCount");
+
+if (!businessCount) {
+    businessCount = 120;
+}
+
+businessCount++;
+
+localStorage.setItem("businessCount", businessCount);
+
+document.getElementById("businessCount").innerText = businessCount;
+
+
+// ==========================
+// TAX COUNTER
+// ==========================
+
+let taxCount = localStorage.getItem("taxCount");
+
+if (!taxCount) {
+    taxCount = 850;
+}
+
+document.getElementById("taxCount").innerText = taxCount;
+
+
+// ==========================
+// TOOL CLICK INCREASE
+// ==========================
+
+function increaseTax() {
+
+    taxCount++;
+
+    localStorage.setItem("taxCount", taxCount);
+
+}
+
+document.getElementById("vatTool").addEventListener("click", increaseTax);
+
+document.getElementById("corporateTool").addEventListener("click", increaseTax);
+
+document.getElementById("aiTool").addEventListener("click", increaseTax);
